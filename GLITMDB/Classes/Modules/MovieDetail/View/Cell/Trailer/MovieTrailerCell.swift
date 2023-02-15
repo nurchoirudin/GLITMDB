@@ -2,7 +2,7 @@
 //  MovieTrailerCell.swift
 //  GLITMDB
 //
-//  Created by SehatQ on 15/02/23.
+//  Created by Nur Choirudin on 15/02/23.
 //
 
 import UIKit
@@ -35,8 +35,11 @@ class MovieTrailerCell: UICollectionViewCell {
     }
     
     func loadURLString(_ urlString: String?) {
-        if let webUrlString = urlString, let webURL = URL(string: webUrlString) {
-            webView.load(URLRequest(url: webURL))
+        DispatchQueue.main.async {[weak self] in
+            guard let self = self else { return }
+            if let webUrlString = urlString, let webURL = URL(string: webUrlString) {
+                self.webView.load(URLRequest(url: webURL))
+            }
         }
     }
     

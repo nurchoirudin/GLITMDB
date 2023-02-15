@@ -2,7 +2,7 @@
 //  GLITMDBUITestsLaunchTests.swift
 //  GLITMDBUITests
 //
-//  Created by SehatQ on 13/02/23.
+//  Created by Nur Choirudin on 13/02/23.
 //
 
 import XCTest

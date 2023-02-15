@@ -2,7 +2,7 @@
 //  Assembler.swift
 //  GLITMDB
 //
-//  Created by SehatQ on 13/02/23.
+//  Created by Nur Choirudin on 13/02/23.
 //
 
 import Foundation
@@ -12,7 +12,9 @@ extension Assembler {
     static let sharedAssembler: Assembler = {
         let container = Container()
         let assembler = Assembler([
-//            LoginAssembly(),
+            ViewControllerAssembly(),
+            MovieHomeAssembly(),
+            MovieDetailAssembly()
         ], container: container)
         return assembler
     }()

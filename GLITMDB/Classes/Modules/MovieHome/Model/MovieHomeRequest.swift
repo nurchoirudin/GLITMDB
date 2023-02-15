@@ -1,12 +1,13 @@
 //
-//  MovieHomeRequestModel.swift
+//  MovieHomeRequest.swift
 //  GLITMDB
 //
-//  Created by SehatQ on 14/02/23.
+//  Created by Nur Choirudin on 14/02/23.
 //
 
 import Foundation
-struct MovieHomeRequestModel {
+
+struct MovieHomeRequest {
     var page: Int? = 1
     
     func getParams() -> [String: Any] {
@@ -14,9 +15,5 @@ struct MovieHomeRequestModel {
         params["page"] = page
         
         return params
-    }
-    
-    mutating func resetPage() {
-        page = 1
     }
 }

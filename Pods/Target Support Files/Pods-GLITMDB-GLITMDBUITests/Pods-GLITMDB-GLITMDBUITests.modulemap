@@ -1,0 +1,6 @@
+framework module Pods_GLITMDB_GLITMDBUITests {
+  umbrella header "Pods-GLITMDB-GLITMDBUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
